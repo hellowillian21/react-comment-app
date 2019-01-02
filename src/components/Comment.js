@@ -14,6 +14,7 @@ class Comment extends Component {
   }
 
   componentWillMount() {
+    // console.log('cm', this.props)
     this._updateTimeString()
     this._timer = setInterval(
       this._updateTimeString.bind(this),
@@ -50,6 +51,7 @@ class Comment extends Component {
     }
   }
   render() {
+   
     return (
       <div className="comment">
         <div className="comment-username">
